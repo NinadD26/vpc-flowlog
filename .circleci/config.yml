@@ -30,3 +30,9 @@ jobs:
           root: .
           paths:
             - .          
+
+workflows:
+  build_now:
+    jobs:
+      - plan-apply
+      - apply
