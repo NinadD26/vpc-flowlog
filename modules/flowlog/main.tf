@@ -148,7 +148,7 @@ resource "aws_flow_log" "vpc_flow_log" {
   traffic_type         = var.traffic_type
   log_destination_type = "s3"
   
-  log_format = "${vpc-id} ${subnet-id} ${region} ${account-id} ${az-id} ${flow-direction} ${protocol}"
+  # log_format = "${vpc-id} ${subnet-id} ${region} ${account-id} ${az-id} ${flow-direction} ${protocol}"
   
 
   #  log_format = join(" ", [
